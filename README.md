@@ -1,6 +1,6 @@
 # Creative Machines, Creative Sketches
 
-Static workshop website displaying `assets/teaser_v2.png` on the homepage. No dependencies or build step are required.
+Static workshop website for SIGGRAPH Asia 2026. The homepage is a single HTML file and uses `assets/teaser_v2.png`. No dependencies or build step are required.
 
 ## Local preview
 
