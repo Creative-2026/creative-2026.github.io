@@ -243,6 +243,44 @@
       .theme.interaction { background: linear-gradient(180deg, var(--rose-soft), #fff 58%); }
       .theme.interaction h3, .theme.interaction .pill { color: var(--rose); }
 
+      .schedule {
+        width: 100%;
+        margin-top: 1.5rem;
+        border-collapse: collapse;
+      }
+      .schedule th,
+      .schedule td {
+        text-align: left;
+        padding: 0.72rem 0.35rem;
+        border-bottom: 1px solid var(--line);
+        vertical-align: baseline;
+      }
+      .schedule th {
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .schedule td:first-child,
+      .schedule th:first-child {
+        width: 9.5rem;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+      .schedule .session td {
+        padding-top: 1.35rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        font-size: 1.12rem;
+      }
+      .schedule a {
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .schedule a:hover { color: var(--violet); }
+
       .speakers {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -437,8 +475,8 @@
       <p class="lede">Generation, evaluation, and interaction in the generative AI era.</p>
       <ul class="facts">
         <li>1–4 December 2026</li>
+        <li>Room 403/404, Level 4</li>
         <li>Kuala Lumpur, Malaysia</li>
-        <li>SketchKit tutorial</li>
       </ul>
       <figure class="poster">
         <img src="./assets/teaser_v2.png" width="2252" height="1500"
@@ -487,24 +525,71 @@
       <section id="program">
         <div class="wrap">
           <h2>Program</h2>
-          <p class="intro">Talks, discussion, and a hands-on tutorial.</p>
-          <div class="themes">
-            <article class="theme generation">
-              <p class="pill">Talks</p>
-              <h3>Invited talks</h3>
-              <p>Recent advances in creative AI.</p>
-            </article>
-            <article class="theme evaluation">
-              <p class="pill">Panel</p>
-              <h3>Panel discussion</h3>
-              <p>Foundational, societal, and ethical questions surrounding machine creativity.</p>
-            </article>
-            <article class="theme interaction">
-              <p class="pill">Tutorial</p>
-              <h3>SketchKit tutorial</h3>
-              <p>A hands-on session for sketch-based creative applications.</p>
-            </article>
-          </div>
+          <p class="intro">Meeting Room 403/404, Level 4, Kuala Lumpur Convention Centre.</p>
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Program</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:00–09:05</td>
+                <td>Opening remarks</td>
+              </tr>
+              <tr class="session">
+                <td colspan="2">Session I: Generation and Evaluation</td>
+              </tr>
+              <tr>
+                <td>09:05–09:35</td>
+                <td><a href="https://jdily.github.io/">I-Chao Shen</a></td>
+              </tr>
+              <tr>
+                <td>09:35–10:05</td>
+                <td><a href="http://www.geometrylearning.com/lin/">Lin Gao</a></td>
+              </tr>
+              <tr>
+                <td>10:05–10:35</td>
+                <td><a href="https://deardeer.github.io/">Min Lu</a></td>
+              </tr>
+              <tr>
+                <td>10:35–11:05</td>
+                <td><a href="https://arash-mham.github.io/">Ali Mahdavi-Amiri</a></td>
+              </tr>
+              <tr>
+                <td>11:05–12:05</td>
+                <td><a href="#sketchkit">SketchKit tutorial</a></td>
+              </tr>
+              <tr class="session">
+                <td colspan="2">Session II: Human–AI Interaction</td>
+              </tr>
+              <tr>
+                <td>14:00–14:30</td>
+                <td>Shisheng Zheng</td>
+              </tr>
+              <tr>
+                <td>14:30–15:00</td>
+                <td><a href="http://www.nxzhao.com/">Nanxuan (Cherry) Zhao</a></td>
+              </tr>
+              <tr>
+                <td>15:00–15:30</td>
+                <td><a href="https://yuqian1023.github.io/">Qian Yu</a></td>
+              </tr>
+              <tr>
+                <td>15:30–16:00</td>
+                <td><a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=hongbo-fu-hongbofu">Hongbo Fu</a></td>
+              </tr>
+              <tr>
+                <td>16:00–17:00</td>
+                <td>Panel discussion and audience Q&amp;A</td>
+              </tr>
+              <tr>
+                <td>17:00–17:05</td>
+                <td>Closing remarks</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -648,11 +733,11 @@
             <dl>
               <div>
                 <dt>When</dt>
-                <dd>1–4 December 2026, during SIGGRAPH Asia. The workshop session time will be posted with the conference program.</dd>
+                <dd>1–4 December 2026, during SIGGRAPH Asia. Session times are listed in the <a href="#program">program</a>.</dd>
               </div>
               <div>
                 <dt>Where</dt>
-                <dd>Kuala Lumpur Convention Centre (KLCC), Kuala Lumpur City Centre, 50088 Kuala Lumpur, Malaysia.</dd>
+                <dd>Meeting Room 403/404, Level 4, Kuala Lumpur Convention Centre (KLCC), Kuala Lumpur City Centre, 50088 Kuala Lumpur, Malaysia.</dd>
               </div>
               <div>
                 <dt>Format</dt>
