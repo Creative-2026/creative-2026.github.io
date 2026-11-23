@@ -313,6 +313,18 @@
         background: #eef0f4;
       }
       .speaker a:hover { color: var(--violet); }
+      .speaker strong {
+        display: block;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .speaker .placeholder {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 16px;
+        margin-bottom: 0.75rem;
+        background: #f4efff;
+      }
       .organizers {
         list-style: none;
         margin: 1.4rem 0 0;
@@ -624,7 +636,7 @@
                 <img src="./assets/speakers/nanxuan-zhao.jpg" width="640" height="640" alt="">
                 Nanxuan (Cherry) Zhao
               </a>
-              <span>Adobe Research</span>
+              <span>Runway</span>
             </li>
             <li class="speaker">
               <a href="https://arash-mham.github.io/">
@@ -646,6 +658,11 @@
                 Qian Yu
               </a>
               <span>Beihang University</span>
+            </li>
+            <li class="speaker">
+              <div class="placeholder" aria-hidden="true"></div>
+              <strong>Shisheng Zheng</strong>
+              <span>Huawei</span>
             </li>
             <li class="speaker">
               <a href="https://consumer.huawei.com/en/mobileservices/gopaint/">
